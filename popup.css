@@ -1,0 +1,194 @@
+body{
+  background: #fff;;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  justify-content: space-around;
+  align-items: center;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: .15rem;
+  margin-bottom:0.5rem;
+  margin-top:0.5rem;
+}
+
+footer {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: .15rem;
+  margin-bottom:0.5rem;
+  margin-top:0.5rem;
+}
+
+footer > a {
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+}
+
+footer > a > img {
+  height: 2.25rem;
+}
+
+footer > a > img:hover {
+  filter: invert(43%) sepia(84%) saturate(1700%) hue-rotate(169deg) brightness(89%) contrast(87%);
+}
+
+
+
+/* this css was copy-pasted from https://css-tricks.com/full-width-containers-limited-width-parents/ */
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.segmentation-line {
+  border-bottom: 0.05rem solid darkgray;
+}
+
+header img {
+  height: 4rem;
+}
+
+button {
+  padding: .5rem;
+  padding-bottom: .75rem;
+  height: 3.125rem;
+  width: 3.125rem;
+  outline: none;
+  margin:.20rem;
+  border-radius: 2rem;
+  border-width: .1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  filter: invert(7%) sepia(5%) saturate(685%) hue-rotate(278deg) brightness(102%) contrast(88%);
+}
+
+/*to convert hex to filter values, use this codepen: https://codepen.io/sosuke/pen/Pjoqqp */
+.active-button{
+  border-width: .15rem;
+  
+  /*this filter corresponds to #1190cb */
+  filter: invert(43%) sepia(84%) saturate(1700%) hue-rotate(169deg) brightness(89%) contrast(87%);
+  
+  /*#C43145*/
+  /* filter: invert(37%) sepia(46%) saturate(4853%) hue-rotate(331deg) brightness(78%) contrast(96%); */
+  
+   /* #2F4F4F */
+  /*filter: invert(26%) sepia(26%) saturate(602%) hue-rotate(131deg) brightness(92%) contrast(88%);*/
+}
+
+
+/* Styling the volume sliders, using code from: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 4.5rem; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #242323;
+  height: 1rem;
+  width: .675rem;
+  border-radius: 3px;
+  background: #fff;
+  cursor: pointer;
+  margin-top: -.350rem; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #1190cb;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+
+
+
+#coffeeShopButton {
+  background: url('images/coffee-pot.png') no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+#wavesButton {
+  background: url('images/waves.png') no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+#leavesButton {
+  background: url('images/leaves.png') no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+#rainButton {
+  background: url('images/rain.png') no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+#fireButton {
+  background: url('images/fire.png') no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+#riverButton {
+  background: url('images/river.png') no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+#nightButton {
+  background: url('images/night.png') no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+#fanButton {
+  background: url('images/fan.png') no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+#muteButton {
+  background: url('images/Speaker_Icon.png') no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}

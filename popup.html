@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="popup.css">
+    </head>
+    <body>
+      <header>
+        <img src = "images/hum logo.png" alt= "Hum - Fade out. Focus in.">
+      </header>
+      <div class="full-width segmentation-line"> 
+      </div>
+      <div class="container full-width">
+        <div>
+          <div class="row"> 
+            <div>
+              <button id="coffeeShopButton"></button>
+              <input type="range"  id="coffeeShopVolumeSlider" name="Coffee Shop Volume" min="0" max="1" step="0.01">
+            </div>
+            <div>
+              <button id="wavesButton"></button>
+              <input type="range" id="wavesVolumeSlider" name="Waves Volume" min="0" max="1" step="0.01">
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <button id="leavesButton"></button>
+              <input type="range" id="leavesVolumeSlider" name="Leaves Volume" min="0" max="1" step="0.01">
+            </div>
+            <div>
+              <button id="rainButton"></button>
+              <input type="range" id="rainVolumeSlider" name="Rain Volume" min="0" max="1" step="0.01">
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <button id="fireButton"></button>
+              <input type="range" id="fireVolumeSlider" name="Fire Volume" min="0" max="1" step="0.01">
+            </div>
+            <div>
+              <button id="riverButton"></button>
+              <input type="range" id="riverVolumeSlider" name="River Volume" min="0" max="1" step="0.01">
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <button id="nightButton"></button>
+              <input type="range" id="nightVolumeSlider" name="Night Volume" min="0" max="1" step="0.01">
+            </div>
+            <div>
+              <button id="fanButton"></button>
+              <input type="range" id="fanVolumeSlider" name="Fan Volume" min="0" max="1" step="0.01">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <button id="muteButton"></button>
+            <input type="range" id="masterVolumeSlider" name="Master Volume" min="0" max="1" step="0.01">
+          </div>
+        </div>
+      </div>
+    <div class="full-width segmentation-line"> 
+    </div>
+    <footer>
+      <span>Developed by Michael Hughes: </span>
+      <a href="https://www.twitter.com/mehughes124" target="_blank"><img src="images/twitter_logo.png"></a> 
+      <a href="https://github.com/mehughes124/" target="_blank"><img src="images/github_logo.png"></a> 
+    </footer>
+    </body>
+    <script src="scripts/howler.js"></script>
+    <script src="background.js"></script>
+    <script src="popup.js"></script>
+  </html>
