@@ -34,7 +34,14 @@ fanSound = {};
 
 // use a boolean for backend muted state and make sure it doesn't get out of sync with storage
 var mutedBool = false;
-chrome.storage.sync.set({muted: 'inactive'});
+chrome.storage.sync.get(['muted'], function(key) {
+  if (key.muted === 'inactive'){
+    mutedBool = false;
+  }
+  else if (key.muted === 'active'){
+    mutedBool = true;
+  }
+});
 
 // this is an array we'll push the created, actively playing Howls to.
 // Not used for anything right now, but I have the removeItem function for a reason that didn't pan out and I might as well keep it in case it's useful.
