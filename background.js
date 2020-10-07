@@ -365,7 +365,6 @@ function toggleHowl(sound){
   }
   else{
     if (sound.playing()){
-      console.log(sound + "the toggle function pause fired");
       sound.pause();
       sound.is_playing = false;
       removeItem(currentlyPlaying, sound);
@@ -373,11 +372,9 @@ function toggleHowl(sound){
     }
     else if (!(sound.playing())){
       sound.play();
-      console.log(sound + "the toggle function play fired");
       sound.is_playing = true;
       currentlyPlaying.push(sound);
       return "active";
     }
   }
 }
-
