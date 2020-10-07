@@ -1,6 +1,6 @@
 {
   "name": "Hum - Personal Soundscapes",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create a hum - your own personal soundscape. Fade out the world and focus in.",
   "permissions": ["storage", "background"],
   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
