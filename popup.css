@@ -36,6 +36,10 @@ footer {
   margin-top:0.5rem;
 }
 
+footer > span {
+  margin-top: .135em;
+}
+
 footer > a {
   margin-left:0.5rem;
   margin-right:0.5rem;
@@ -99,6 +103,12 @@ button {
   /*filter: invert(26%) sepia(26%) saturate(602%) hue-rotate(131deg) brightness(92%) contrast(88%);*/
 }
 
+.active-mute-button{
+  border-width: .15rem;
+  
+  /*this filter corresponds to #da2c38 */
+  filter: invert(25%) sepia(67%) saturate(6586%) hue-rotate(346deg) brightness(93%) contrast(83%);
+}
 
 /* Styling the volume sliders, using code from: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
 input[type=range] {

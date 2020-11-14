@@ -107,13 +107,13 @@ function buildPage(){
     }
 
     if(key.muted === 'active'){
-      muteButton.classList.add("active-button");
+      muteButton.classList.add("active-mute-button");
       muteButton.style.backgroundImage = "url('images/volume-mute.png')";
       muteButton.style.backgroundRepeat = "no-repeat";
       console.log("muted === 'active'");
     }
     else if (key.muted === 'inactive'){
-      muteButton.classList.remove("active-button");
+      muteButton.classList.remove("active-mute-button");
       muteButton.style.backgroundImage = "url('images/Speaker_Icon.png')";
       muteButton.style.backgroundRepeat = "no-repeat";
       console.log("muted === 'inactive'");
